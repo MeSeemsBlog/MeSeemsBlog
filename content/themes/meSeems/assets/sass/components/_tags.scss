@@ -1,0 +1,25 @@
+/*------------------------------------*\
+  Components > Tags
+\*------------------------------------*/
+
+.c-tags {
+  overflow: hidden;
+
+  a {
+    float: left;
+    color: $color-gray;
+    background-color: $card-bg;
+    font-size: $font-size-tiny;
+    font-weight: $font-weight-medium;
+    text-transform: uppercase;
+    transition: $global-transition;
+    border-bottom: 1px solid $color-border;
+    letter-spacing: $global-letter-spacing;
+    padding: half($base-spacing-unit) ($base-spacing-unit + quarter($base-spacing-unit));
+    margin: 0 $base-spacing-unit $base-spacing-unit 0;
+
+    @include attention() {
+      color: $color-text;
+    }
+  }
+}

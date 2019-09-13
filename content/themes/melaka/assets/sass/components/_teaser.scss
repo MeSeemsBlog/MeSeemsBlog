@@ -1,0 +1,79 @@
+/*------------------------------------*\
+  Components > Teaser
+\*------------------------------------*/
+
+.c-teaser-wrapper:not(:last-child) {
+  @include mq($until: desktop) {
+    margin-bottom: (double($base-spacing-unit) + half($base-spacing-unit));
+  }
+}
+
+.c-teaser {
+  display: flex;
+  align-items: center;
+  background-color: $card-bg;
+  border-bottom: 1px solid $color-border;
+  border-radius: double($global-border-radius);
+  padding: $base-spacing-unit + half($base-spacing-unit);
+
+  &:not(:last-child) {
+    margin-bottom: $base-spacing-unit + half($base-spacing-unit);
+
+    @include mq($from: desktop) {
+      margin-bottom: double($base-spacing-unit);
+    }
+  }
+
+  &__media {
+    margin-left: $base-spacing-unit;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__image {
+    display: block;
+    width: quadruple($base-spacing-unit) + $base-spacing-unit;
+    height: triple($base-spacing-unit) + $base-spacing-unit;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $bg-gray;
+    border-radius: $global-border-radius;
+    transition: all $global-transition ease-in-out;
+    box-shadow: quarter($base-spacing-unit) quarter($base-spacing-unit) 0 $bg-gray;
+
+    .js-enabled &.js-fadein {
+      opacity: 0;
+    }
+
+    .js-enabled &.is-inview {
+      opacity: 1;
+    }
+  }
+
+  &__title {
+    display: inline;
+    font-size: $font-size-medium;
+    transition: $global-transition;
+    font-weight: $font-weight-bold;
+  }
+
+  &__date {
+    display: block;
+    color: $color-gray;
+    font-size: $font-size-mini;
+    font-weight: $font-weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $global-letter-spacing;
+    line-height: 1;
+    margin-top: half($base-spacing-unit);
+  }
+
+  @include attention() {
+    .c-teaser__image {
+      transform: scale(1.01);
+    }
+  }
+}

@@ -1,0 +1,39 @@
+// *----------------------------------*\
+//  Settings > Colors Dark
+// *----------------------------------*/
+
+// Colors
+$color-brand: #51BBF6;
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-text:  #FFFFFF;
+$color-gray:  #E5EFF5;
+
+// Background Colors
+$bg-color:        #263238;
+$bg-gray:         #333F44;
+$bg-white:        $color-white;
+$bg-dark-opacity: rgba($color-black, .1);
+
+// Border
+$color-border: #333F44;
+$color-border-dark: #333F44;
+
+// Links
+$color-link: $color-text;
+
+// Cards
+$card-bg: #212A2E;
+
+// Buttons
+$btn-bg:       $color-brand;
+$btn-bg-hover: $color-brand;
+
+$btn-color:       $color-gray;
+$btn-color-hover: $color-gray;
+
+// Code Block
+$bg-code-block: #F6F9FC;
+
+$bg-code-inline:  $bg-gray;
+$color-code-inline: $color-text;

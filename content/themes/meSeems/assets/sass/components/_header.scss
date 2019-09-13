@@ -1,0 +1,18 @@
+/*------------------------------------*\
+  Components > Header
+\*------------------------------------*/
+
+.c-header {
+  padding: $base-spacing-unit 0;
+  margin-bottom: $base-spacing-unit;
+  border-bottom: half(quarter($base-spacing-unit)) solid $color-border-dark;
+
+  @include mq($from: desktop) {
+    padding: double($base-spacing-unit) 0;
+    padding: ($base-spacing-unit + half($base-spacing-unit) + quarter($base-spacing-unit)) 0
+             ($base-spacing-unit + half($base-spacing-unit)) 0;
+    margin-bottom: double($base-spacing-unit);
+    border-bottom: quarter($base-spacing-unit) solid $color-border-dark;
+    border-bottom: 1px solid $color-border-dark;
+  }
+}

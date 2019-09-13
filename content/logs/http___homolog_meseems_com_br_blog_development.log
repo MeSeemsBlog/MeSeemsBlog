@@ -1,0 +1,5 @@
+{"name":"Log","hostname":"WIN-Q7272G4GUOQ","pid":3128,"level":30,"msg":"Ghost is running in development...","time":"2019-09-05T22:00:14.059Z","v":0}
+{"name":"Log","hostname":"WIN-Q7272G4GUOQ","pid":3128,"level":30,"msg":"Listening on: 127.0.0.1:2368","time":"2019-09-05T22:00:14.059Z","v":0}
+{"name":"Log","hostname":"WIN-Q7272G4GUOQ","pid":3128,"level":30,"msg":"Url configured as: http://homolog.meseems.com.br/blog/","time":"2019-09-05T22:00:14.075Z","v":0}
+{"name":"Log","hostname":"WIN-Q7272G4GUOQ","pid":3128,"level":30,"msg":"Ctrl+C to shut down","time":"2019-09-05T22:00:14.075Z","v":0}
+{"name":"Log","hostname":"WIN-Q7272G4GUOQ","pid":3128,"level":30,"msg":"Ghost boot 3.437s","time":"2019-09-05T22:00:14.075Z","v":0}

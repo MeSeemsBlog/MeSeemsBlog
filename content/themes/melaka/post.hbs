@@ -1,0 +1,38 @@
+{{!< default}}
+
+{{#post}}
+
+{{> post-hero }}
+
+<div class='o-wrapper'>
+
+  <div class='o-grid'>
+    <div class='o-grid__col o-grid__col--center o-grid__col--2-3-m'>
+      <article class='c-{{ post_class }}'>
+        <div class='c-content'>
+          {{ content }}
+        </div>
+
+        {{#if @labs.subscribers }}
+          {{> subscribe-form }}
+        {{/if}}
+
+        {{#if tags}}
+          <div class='c-tags'>
+            {{ tags separator='' }}
+          </div>
+          <hr>
+        {{/if}}
+
+        {{> disqus}}
+
+      </article>
+
+    </div>
+  </div>
+
+</div>
+
+{{/post}}
+
+{{> related-posts}}

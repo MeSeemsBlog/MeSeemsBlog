@@ -1,0 +1,13 @@
+/*------------------------------------*\
+  Components > Pagination
+\*------------------------------------*/
+
+.c-pagination {
+  background-color: $bg-gray;
+  padding: $base-spacing-unit;
+  margin-bottom: double($base-spacing-unit);
+
+  @include mq($from: tablet) {
+    padding: $base-spacing-unit + half($base-spacing-unit);
+  }
+}

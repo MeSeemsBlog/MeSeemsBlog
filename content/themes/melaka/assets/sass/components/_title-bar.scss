@@ -1,0 +1,34 @@
+/*------------------------------------*\
+  Components > title bar
+\*------------------------------------*/
+
+.c-title-bar {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: $base-spacing-unit;
+  margin-bottom: $base-spacing-unit + half($base-spacing-unit);
+  border-bottom: 2px solid $color-border-dark;
+
+  @include mq($from: desktop) {
+    margin-bottom: double($base-spacing-unit);
+  }
+
+  &--with-icon {
+    padding-bottom: half($base-spacing-unit) + quarter($base-spacing-unit);
+  }
+
+  &__title {
+    line-height: 1;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: $global-letter-spacing;
+    font-weight: $font-weight-medium;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    transition: $global-transition;
+  }
+}

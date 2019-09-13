@@ -1,0 +1,90 @@
+/*------------------------------------*\
+  Components > Card Author
+\*------------------------------------*/
+
+.c-card-author {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: $card-bg;
+  border-bottom: 1px solid $color-border;
+  border-radius: double($global-border-radius);
+  padding: $base-spacing-unit + half($base-spacing-unit);
+
+  &-wrap {
+    display: flex;
+
+    @include mq($until: tablet) {
+      &:not(:last-child) {
+        margin-bottom: $base-spacing-unit + half($base-spacing-unit);
+      }
+    }
+
+    @include mq($from: tablet) {
+      &:not(:last-child) {
+        border-right: 1px solid $color-border;
+        margin-bottom: $base-spacing-unit + half($base-spacing-unit);
+      }
+
+      &:nth-child(2n) {
+        border-right: 0;
+      }
+    }
+
+    @include mq($from: desktop) {
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+
+      &:nth-child(2n) {
+        border-right: 1px solid $color-border;
+      }
+
+      &:nth-child(3n) {
+        border-right: 0;
+      }
+
+      &:last-child {
+        border-right: 0;
+      }
+
+      &:not(:nth-child(-n+3)) {
+        margin-top: double($base-spacing-unit);
+      }
+    }
+  }
+
+  &__media {
+    margin-right: $base-spacing-unit + half($base-spacing-unit);
+  }
+
+  &__image {
+    border-radius: 50%;
+    border: quarter($base-spacing-unit) solid $color-border;
+    width: quadruple($base-spacing-unit);
+    height: quadruple($base-spacing-unit);
+    min-width: quadruple($base-spacing-unit);
+  }
+
+  &__name {
+    font-weight: $font-weight-medium;
+    font-size: $font-size-small;
+
+    transition: $global-transition;
+    letter-spacing: $global-letter-spacing;
+    margin-bottom: quarter($base-spacing-unit);
+  }
+
+  &__bio {
+    margin: 0;
+    color: $color-gray;
+    font-size: $font-size-tiny;
+    transition: $global-transition;
+  }
+
+  @include attention() {
+    .c-card-author__bio {
+      color: $color-text;
+    }
+  }
+}

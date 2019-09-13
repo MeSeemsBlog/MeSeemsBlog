@@ -1,0 +1,14 @@
+/*------------------------------------*\
+  Elements > hr
+\*------------------------------------*/
+
+hr {
+  height: 1px;
+  border: 0;
+  background-color: $color-border;
+  margin: ($base-spacing-unit + half($base-spacing-unit)) 0;
+
+  @include mq($from: desktop) {
+    margin: (double($base-spacing-unit) + half($base-spacing-unit)) 0;
+  }
+}

@@ -1,0 +1,19 @@
+/*------------------------------------*\
+  Elements > Blockquote
+\*------------------------------------*/
+
+blockquote {
+  font-weight: $font-weight-medium;
+  font-family: $font-sans-serif;
+  border-left: half($base-spacing-unit) solid $color-brand;
+  padding: $base-spacing-unit + half($base-spacing-unit);
+  background-color: $card-bg;
+  box-shadow: half($base-spacing-unit) half($base-spacing-unit) 0 $bg-gray;
+
+  @include mq($from: desktop) {
+    font-size: $font-size-h2;
+    padding: double($base-spacing-unit) + $base-spacing-unit;
+    margin-top: half($base-spacing-unit);
+    margin-bottom: double($base-spacing-unit);
+  }
+}
