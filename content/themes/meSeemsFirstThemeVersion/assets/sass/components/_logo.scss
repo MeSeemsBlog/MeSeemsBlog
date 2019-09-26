@@ -1,0 +1,41 @@
+/*------------------------------------*\
+  Components > Logo
+\*------------------------------------*/
+
+.c-logo {
+  @include mq($from: tablet) {
+    margin: 0 auto;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  &__link {
+    display: block;
+    line-height: 1;
+    font-weight: $font-weight-medium;
+    font-size: double($font-size-tiny);
+    transition: color $global-transition ease-in-out;
+
+    @include mq($from: tablet) {
+      font-size: double($font-size-small);
+    }
+
+    @include mq($from: desktop) {
+      font-size: double($font-size-base);
+    }
+
+    @include attention() {
+      color: $color-brand;
+    }
+  }
+
+  &__img {
+    max-height: double($base-spacing-unit);
+
+    @include mq($from: desktop) {
+      max-height: double($base-spacing-unit) + $base-spacing-unit;
+    }
+  }
+}

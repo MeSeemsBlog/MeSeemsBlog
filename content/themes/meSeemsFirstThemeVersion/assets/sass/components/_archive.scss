@@ -1,0 +1,24 @@
+/*------------------------------------*\
+  Components > Archive
+\*------------------------------------*/
+
+.c-archive {
+  text-align: center;
+  margin-top: $base-spacing-unit;
+  margin-bottom: $base-spacing-unit + half($base-spacing-unit);
+
+  @include mq($from: desktop) {
+    margin-bottom: double($base-spacing-unit) + half($base-spacing-unit);
+  }
+
+  &__title {
+    margin-bottom: 0;
+    font-size: $font-size-h2;
+  }
+
+  &__description {
+    margin-top: half($base-spacing-unit);
+    margin-bottom: 0;
+    font-size: $font-size-small;
+  }
+}
