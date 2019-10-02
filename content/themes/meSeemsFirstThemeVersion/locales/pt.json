@@ -1,4 +1,4 @@
-﻿{
+{
   "More Posts": "Mais mensagens",
   "Loading": "Carregando",
   "Page Not Found": "Página não encontrada",
@@ -9,7 +9,7 @@
   "Subscribe to {blogtitle}": "Inscrever-se para {blogtitle}",
   "Subscribed!": "Subscrito!",
   "with the email address": "com o endereço de email",
-  "Email": "Insira seu email",
+  "Email": "O email",
   "Your email address": "Seu endereço de email",
   "You've successfully subscribed to": "Você se inscreveu com sucesso para",
   "Featured Post": "Post em destaque",
@@ -24,7 +24,7 @@
   "Search {blogtitle}": "Pesquisa {blogtitle}",
   "Type to Search": "Escreva para pesquisar",
   "Navigation": "Navegação",
-  "Newsletter": "Newsletter",
+  "Newsletter": "Boletim de Notícias",
   "Published with {ghostlink}": "Publicado com {ghostlink}",
   "You Might Be Interested In": "Você pode estar interessado em",
   "Tags": "Tag",

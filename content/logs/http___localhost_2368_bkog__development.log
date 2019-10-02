@@ -1,0 +1,5 @@
+{"name":"Log","hostname":"WIN-Q7272G4GUOQ","pid":5428,"level":30,"msg":"Ghost is running in development...","time":"2019-09-30T19:25:56.819Z","v":0}
+{"name":"Log","hostname":"WIN-Q7272G4GUOQ","pid":5428,"level":30,"msg":"Listening on: 127.0.0.1:2368","time":"2019-09-30T19:25:56.820Z","v":0}
+{"name":"Log","hostname":"WIN-Q7272G4GUOQ","pid":5428,"level":30,"msg":"Url configured as: http://localhost:2368/bkog/","time":"2019-09-30T19:25:56.821Z","v":0}
+{"name":"Log","hostname":"WIN-Q7272G4GUOQ","pid":5428,"level":30,"msg":"Ctrl+C to shut down","time":"2019-09-30T19:25:56.822Z","v":0}
+{"name":"Log","hostname":"WIN-Q7272G4GUOQ","pid":5428,"level":30,"msg":"Ghost boot 3.765s","time":"2019-09-30T19:25:56.824Z","v":0}
