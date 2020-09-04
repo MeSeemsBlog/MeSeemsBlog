@@ -61,6 +61,6 @@
   "devDependencies": {
     "dart-sass": "^1.14.3",
     "gulp": "^4.0.2",
-    "node-sass": "^4.10.0"
+    "node-sass": "^4.13.1"
   }
 }
